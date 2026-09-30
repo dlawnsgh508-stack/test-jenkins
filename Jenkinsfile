@@ -1,6 +1,6 @@
 pipeline {
     // 특정 빌드 노드 지정 시 agent { label 'jenkins-node' } 로 변경 권장
-    agent any 
+    agent { label "jenkins-node" }
     
     triggers {
         pollSCM('* * * * *')
